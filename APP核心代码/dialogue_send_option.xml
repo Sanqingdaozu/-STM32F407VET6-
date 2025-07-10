@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择识别模式"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <!-- 横向按钮 + 图片容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+
+
+
+        <!-- 模块2：识别人脸（图片1） -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_color"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/color_identifier" />
+            <Button
+                android:id="@+id/btn_color"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:text="识别色块" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/img_human_face"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/specific_face_identifier" />
+
+            <Button
+                android:id="@+id/btn_human_face"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:text="识别人脸" />
+        </LinearLayout>
+
+        <!-- 模块3：识别人脸（按钮2 可删）-->
+
+    </LinearLayout>
+</LinearLayout>

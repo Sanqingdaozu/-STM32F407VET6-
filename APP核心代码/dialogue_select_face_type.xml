@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择人脸识别类型"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btn_random_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="识别随机人脸"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_specific_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="识别特定人脸" />
+</LinearLayout>
